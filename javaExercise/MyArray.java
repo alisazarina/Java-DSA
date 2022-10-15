@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * @author NUR ALISA ZARINA
+ * @author ALISA ZARINA
  */
 
 public class MyArray {
