@@ -39,7 +39,7 @@ public class MyArray {
             }                
         }
 
-        System.out.println("The number of times 5 appears in the array:");
+        System.out.println("The number of times 5 appears in the array:");  // c. (ii) Print the number of times 5 appears in the array (if any)
 
         for (int i = 0; i < odd.length; i++) {  // if/else for comparison
             if (odd[i] == 5) {                  // condition: odd value is 5
