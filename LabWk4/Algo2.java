@@ -29,10 +29,12 @@ import java.util.*;
 
     static Integer evaluatePostfix(String exp) {
 
+        // Create empty stack.
         Stack<Integer> stack = new Stack<>();
 
         for (int i = 0; i < exp.length(); i++) {
 
+            // Perform operations.
             if (isOperator(exp.charAt(i))) {
                 int x = stack.pop();
                 int y = stack.pop();
@@ -65,6 +67,7 @@ import java.util.*;
                     break;
                 }
             } else {
+                // Convert to integer.
                 int operand = exp.charAt(i) - '0';
                 stack.push(operand);
             }
@@ -78,12 +81,12 @@ import java.util.*;
         Scanner sc = new Scanner(System.in);
 
         // Ask user for input +  Read postfix expression from user.
-        System.out.println("Hello. Let's convert postfix to infix!");     
+        System.out.println("Hello. Let's evaluate a postfix expression!");     
         System.out.println("\nPlease input a postfix expression:");
 
         String exp = sc.nextLine();
 
-        System.out.println("\nThe converted infix expression is: ");
+        System.out.println("\nThe evaluated value is: ");
         System.out.println(evaluatePostfix(exp));
 
 
